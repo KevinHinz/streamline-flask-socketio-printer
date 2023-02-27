@@ -42,10 +42,10 @@
 						<h5>Slicer:</h5>
 						<p>Extrusion Rate: [[ slicer_options.extrusion_rate ]]</p>
 						<!-- <input v-model="slicer_options.extrusion_rate" placeholder=""> -->
-						<vue-range-slider :tooltip="null" :min="+0.05" :max="+0.15" :step="+0.01" ref="slider" v-model="slicer_options.extrusion_rate"></vue-range-slider>
+						<vue-range-slider :tooltip="null" :min="+0.05" :max="+10.00" :step="+0.01" ref="slider" v-model="slicer_options.extrusion_rate"></vue-range-slider>
 						<p>Feed Rate: [[ slicer_options.feed_rate ]]</p>
 						<vue-range-slider :tooltip="null" :min="+0" :max="+2000" step="+1" ref="slider" v-model="slicer_options.feed_rate"></vue-range-slider>
-						<p>Layer Hight: [[ slicer_options.layer_hight ]]</p>
+						<p>Layer Height: [[ slicer_options.layer_hight ]]</p>
 						<vue-range-slider :tooltip="null" :min="+0.2" :max="+0.8" step="+0.1" ref="slider" v-model="slicer_options.layer_hight"></vue-range-slider>
 						<h5>Toolpath</h5>
 						<select name="Toolpath Type" class="form-control" v-model="toolpath_type">
@@ -56,9 +56,9 @@
 						</select>
 						<p>Magnitude: [[ toolpath_options.magnitude ]]</p>
 						<vue-range-slider :tooltip="null" :min="0" :max="10" :step="0.5" ref="slider" v-model="toolpath_options.magnitude"></vue-range-slider>
-						<p>Wave Lenght: [[ toolpath_options.wave_lenght ]]</p>
+						<p>Wave Length: [[ toolpath_options.wave_lenght ]]</p>
 						<vue-range-slider :tooltip="null" :min="+1" :max="+20" :step="+1" ref="slider" v-model="toolpath_options.wave_lenght"></vue-range-slider>
-						<p>Rasterisation: [[ toolpath_options.rasterisation ]]</p>
+						<p>Rasterization: [[ toolpath_options.rasterisation ]]</p>
 						<vue-range-slider :tooltip="null" :min="1" :max="100" :step="1" ref="slider" v-model="toolpath_options.rasterisation"></vue-range-slider>
 						<p>Diameter: [[ toolpath_options.diameter ]]</p>
 						<vue-range-slider :tooltip="null" :min="10" :max="100" :step="1" ref="slider" v-model="toolpath_options.diameter"></vue-range-slider>
